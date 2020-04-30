@@ -22,7 +22,7 @@
 
 <!--Nav bar -->
     <header>
-      <img class="headerlogo" src="images/logo.jpg" alt="logo" title="logo">
+      <img class="headerlogo" src="images/logo.png" alt="logo" title="logo">
       <nav>
         <ul>
           <li><a href="index.html">home</a></li>
@@ -35,99 +35,120 @@
 
     <main>
 <!--Hero -->
-      <section class="hero-image-section">
-        <h1>What we can do for you</h1>
+      <section class="hero-image-section-services">
+        <h1>What we can do for you.</h1>
         </section>
 
 <!--bird section -->
-      <section class="bird-people">
+      <section class="bird-people-services">
         <h1>everything.</h1>
         <p1>
         when it comes to creative, we got you covered, And if you don't belive us, check out our super impressive body of work.
         </p1>
-        <img class="outline" src="images/outline.jpg" alt="outline" title="online">
       </section>
 
 <!--services -->
       <section>
         <div class="services-container">
-          <img class="conference" src="images/conference.jpg" alt="conference" title="conference">
-          <div>
-            <h3>branding</h3>
+          <div class="conference">
+          </div>
+          <div class="description-services">
+            <h3 class="blue-h3">branding</h3>
             <p>From the name to the logo to the overall tone we will create and enhance the best face for your brand. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-            <img class="orangearrow" src="images/orangearrow.jpg" alt="orangearrow" title="orangearrow">
+            <img class="orangearrow" src="images/orangearrow.png" alt="orangearrow" title="orangearrow">
           </div>
         </div>
 
         <div class="services-container">
-          <div>
-            <h3>digital marketing</h3>
+          <div class="description-services">
+            <h3 class="blue-h3">digital marketing</h3>
             <p>staying on top of trends via SEO and social media are our specialty. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-            <img class="orangearrow" src="images/orangearrow.jpg" alt="orangearrow" title="orangearrow">
+            <img class="orangearrow" src="images/orangearrow.png" alt="orangearrow" title="orangearrow">
           </div>
-          <img class="fistbump" src="images/fistbump.jpg" alt="fistbump" title="fistbump">
+          <div class="fistbump">
+          </div>
         </div>
 
         <div class="services-container">
-          <img class="photoset" src="images/photoset.jpg" alt="photoset" title="photoset">
-          <div>
-            <h3>digital marketing</h3>
+          <div class="photoset">
+          </div>
+          <div class="description-services">
+            <h3 class="blue-h3">content creation</h3>
             <p>We create killer content wheather it be photography video or animation. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-            <img class="orangearrow" src="images/orangearrow.jpg" alt="orangearrow" title="orangearrow">
+            <img class="orangearrow" src="images/orangearrow.png" alt="orangearrow" title="orangearrow">
           </div>
         </div>
       </section>
 
 <!--form -->
-      <form class="form" id="test_form" name="test_form" method="" action="form.php" onsubmit="return validateForm(this)">
+<section class="form-copy">
+  <h1>
+    let's start a coversation
+  </h1>
+  <p class="subhead">
+    Ready to take the next step? We are! Drop us a line and send over<br>
+    your ideas. We will get back to you as soon as possible!
+  </p>
 
-        <div class="name">
-          <label for="name" class="label_input_wrap">
-          </label>
-          <input class="input2" type="text" name="name" id="name" placeholder="name"/>
-        </div>
+  <p class="subhead">
+    fill out the form below
+  </p>
+</section>
 
-        <div class="email">
-          <label for="email" class="label_input_wrap">
-          </label>
-          <input class="input2" type="email" name="email" id="email" placeholder="email" />
-        </div>
+<form class="form" id="test_form" name="test_form" method="" action="form.php" onsubmit="return validateForm(this)">
 
-        <div class="number">
-          <label for="number" class="label_input_wrap">
-          </label>
-          <input class="input2" type="tel" name="number" id="number" placeholder="number" />
-        </div>
+  <div class="text-field">
+    <label for="name" class="label_input_wrap">
+    </label>
+    <input class="input2" type="text" name="name" id="name" placeholder="name"/>
+  </div>
 
-        <div class="company">
-          <label for="company" class="company">
-          </label>
-          <input class="input2" type="text" name="company" id="company" placeholder="Company" />
-        </div>
+  <div class="email">
+    <label for="email" class="label_input_wrap">
+    </label>
+    <input class="input2" type="email" name="email" id="email" placeholder="email" />
+  </div>
 
-        <div class="description">
-          <label for="comments" class="albel_input_wrap"</ label>
-          <textarea name:="comments" id="comments" placeholder="brief description"></textarea>
-        </div>
+  <div class="number">
+    <label for="number" class="label_input_wrap">
+    </label>
+    <input class="input2" type="tel" name="number" id="number" placeholder="number" />
+  </div>
 
-        <div class="submit">
-          <input type="submit" value="chirp" />
-        </div>
+  <div class="company">
+    <label for="company" class="company">
+    </label>
+    <input class="input2" type="text" name="company" id="company" placeholder="Company" />
+  </div>
 
-      </form>
+  <div class="comments">
+    <label for="comments" class="albel_input_wrap"</ label>
+    <textarea class="input2" name:="comments" id="comments" placeholder="brief description"></textarea>
+  </div>
+
+  <div class="submit">
+    <input type="submit" value="chirp" />
+  </div>
+
+</form>
 
 <!--footer-->
-      <footer>
-        <img class="footerlogo" src="images/logo.jpg" alt="logo" title="logo">
-        <p>home<br> services<br> work<br> about</p>
-        <div class="socialmedia">
-          <a href="https://www.instagram.com/" target="_blank" ><img src="images/insta.jpg" alt="insta" title="insta"/></a>
-          <a href="https://www.twitter.com/explore" target="_blank"><img src="images/twitter.jpg" alt="insta" title="insta"/></a>
-          <a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin.jpg" alt="insta" title="insta"/></a>
-          <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.jpg" alt="insta" title="insta"/></a>
-        </div>
+<footer>
+  <img class="footerlogo" src="images/logo.png" alt="logo" title="logo">
+  <ul class="footer-nav">
+    <li><a href="index.html">home</a></li>
+    <li><a href="about.html">about</a></li>
+    <li><a href="services.html">services</a></li>
+    <li><a href="work.html">work</a></li>
+  </ul>
+  <div class="socialmedia">
+    <a href="https://www.instagram.com/" target="_blank" ><img src="images/insta.png" alt="insta" title="insta"/></a>
+    <a href="https://www.twitter.com/explore" target="_blank"><img src="images/twitter.png" alt="insta" title="insta"/></a>
+    <a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin.png" alt="insta" title="insta"/></a>
+    <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.png" alt="insta" title="insta"/></a>
+  </div>
 
-      </footer>
+</footer>
 
     </body>
 </html>

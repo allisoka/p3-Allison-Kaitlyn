@@ -1,14 +1,262 @@
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Roboto' , sans-serif;
+}
 
 
 
+p{
+  font-family: 'Roboto',sans-serif;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+  }
+
+li{
+  list-style-type: none;
+}
 
 
+/* header */
+
+header{
+  background: black;
+  position: fixed;
+  left: 0;
+  right: 0;
+  padding: 18px;
+  font-family: 'Roboto', sans-serif;
+  z-index: 99;
+}
+
+header nav ul li{
+  display: inline;
+}
+
+header nav a{
+  color: white;
+  text-decoration: none;
+  font-weight: regular;
+  font-size: 18px;
+  margin: 0 20px;
+}
+
+.headerlogo{
+  display: inline-block;
+}
+
+.headerlogo {
+  height: 30px;
+  margin-top: 0px;
+  float: left;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+/* hero img section */
+
+.hero-image-section{
+  padding-left: 80px;
+  color:white;
+  background-position: 0% 10%;
+  background: linear-gradient(#020202, transparent), url('../images/bluebower.jpg') no-repeat center;
+  background-size: cover;
+  height:620px;
+}
+
+.hero-image-section h1{
+  color:white;
+  position: relative;
+  z-index: 50;
+  top: 250px;
+  text-align: left;
+  font-size: 80px;
+}
+
+.subhead-a{
+
+  color: white;
+  font-size: 22px;
+  font-weight: lighter;
+  position: relative;
+  z-index: 50;
+  top: 250px;
+}
+
+.headerbutton{
+  background-color: #eeb461;
+  color: white;
+  padding: 15px;
+  border-radius:30px;
+  font-family: 'Roboto-bold', sans-serif;
+  font-size: 16px;
+  margin-top: 30px;
+  position: relative;
+  z-index: 50;
+  top: 250px;
+}
+
+.headerbutton:hover{ background-color:#4664af;
+}
+
+
+
+/* the kind of work */
+.container{
+  margin-left: 80px;
+  padding-top:70px;
+  padding-bottom: 80px;
+}
+
+
+.service{
+  width: 350px;
+  background-color: #4664af;
+  display:inline-block;
+  padding: 30px;
+  color: white;
+  margin-right: 5px;
+}
+
+.service h2{
+  padding-bottom: 10px;
+}
+
+.service p{
+  margin-bottom: 10px;
+}
+
+.services{
+  padding-top: 30px;
+  padding-right: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.service:nth-child(2){
+ background-color: #dc8564;
+}
+
+.service:nth-child(3){
+ background-color: #eeb461;
+}
+
+.whitearrow{
+  float: right;
+}
+
+/* the work itself */
+
+.work{
+  margin-left:80px;
+}
+
+
+.mockup,
+.solid{
+  display:inline-block;
+  vertical-align: top;
+}
+
+.solid{
+  background-color: #4664af;
+  width:50%;
+  height:350px;
+}
+
+.solid h2,
+.solid p,
+.solid img{
+  padding-left: 40px;
+  padding-top: 20px;
+  padding-right: 40px;
+}
+
+.solid img{
+float: right;
+}
+
+.solid h2{
+  padding-top:70px;
+}
+
+
+
+.mockup{
+    background-image: url('../images/keepwell.jpg');
+    width:50%;
+    height:350px;
+    background-position: 70% 50%;
+}
+
+.mockup2{
+    background-image: url('../images/sofia.jpg');
+    width:50%;
+    height:350px;
+    background-position: 70% 50%;
+}
+
+.keepwell,
+.sofia{
+  color:white;
+  height: 350px;
+  padding-right: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.keepwell{
+  padding-top: 30px;
+}
+
+/* bird people */
+.bird-people{
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-top: 80px;
+  padding-bottom: 70px;
+  background-color: black;
+  color:white;
+  height:200px;
+  font-family: 'Roboto', sans-serif;
+  margin-top:70px;
+  background-image: url('../images/outline2.png');
+  background-size: cover;
+}
+
+.bird-people p{
+  z-index: 99;
+}
+
+.bird-people h1{
+  padding-bottom: 20px;
+  color: #edb461;
+}
 
 
 /* form */
+.form-copy{
+  padding-top: 70px;
+  padding-left: 80px;
+}
+
 .form{
-max-width: 500px;
+width: 1000px;
 margin-top:15px;
+padding-left: 80px;
+padding-bottom: 70px;
 }
 
 h1{
@@ -26,18 +274,19 @@ h1{
 }
 
 section p:last-child {
-    font-size:12px;
-    font-weight:lighter;
+    font-size:20px;
+    font-weight:regular;
     margin-top: 8px;
+    color: gray;
 }
 
 section p::first-line {
     font-weight: bolder;
 }
 
-.subhead::first-letter  {
+/*.subhead::first-letter  {
     font-size:20px;
-}
+}*/
 
 input{
   background: none;
@@ -51,8 +300,17 @@ input{
   padding: 10px 7px;
   margin: 7px 0px;
   font-size: 16px;
-  width: 500px;
+  width: 1000px;
+  display: inline;
 }
+
+.email,
+.number,
+.company,
+.comments{
+  width: 70%;
+}
+
 
 .submit{
   background-color: #eeb461; /* orange */
@@ -64,6 +322,7 @@ input{
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+  border-radius: 50px;
 }
 .submit:hover{ background-color:#4664af;
 }
@@ -73,6 +332,503 @@ textarea{
   padding: 10px 7px;
   margin: 7px 0px;
   font-size: 16px;
-  width: 500px;
+  width: 100%;
   font-family: 'Roboto-bold', sans-serif;
+  }
+
+
+  /* footer */
+
+  footer{
+    background-color: black;
+    padding-left:80px;
+    padding-top:30px;
+    padding-bottom: 30px;
+    padding-right:80px;
+  }
+
+  footer p{
+    color: white;
+    display:inline-block;
+    padding-left: 600px;
+  }
+
+  .footerlogo{
+    display:inline-block;
+  }
+
+.socialmedia{
+  display:inline-block;
+  float:right;
+}
+
+.footer-nav{
+  color: white;
+  display:inline-block;
+  padding-left: 600px;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+  /* ABOUT */
+
+.hero-image-section-about{
+  padding-left: 80px;
+  color:white;
+  background-position: 0% 10%;
+  background: linear-gradient(#020202, transparent), url('../images/redbird.jpg') no-repeat center;
+  background-size: cover;
+  height:620px;
+}
+
+.hero-image-section-about h1{
+  color:white;
+  position: relative;
+  z-index: 100;
+  top: 250px;
+  text-align: center;
+  font-size: 80px;
+  z-index: 1;
+}
+
+.bird-people-about{
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-top: 80px;
+  padding-bottom: 70px;
+  background-color: black;
+  color:white;
+  height:200px;
+  font-family: 'Roboto', sans-serif;
+  background-image: url('../images/outline2.png');
+  background-size: cover;
+  margin-bottom: 70px;
+}
+
+.bird-people-about p{
+  z-index: 99;
+}
+
+.bird-people-about h1{
+  padding-bottom: 20px;
+  color: #edb461;
+}
+
+
+
+/* the facts */
+
+.the-facts{
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.circles{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+}
+
+.tf{
+  display: inline-block;
+  text-align: center;
+
+}
+
+.ps{
+  display: inline-block;
+  text-align: center;
+}
+
+.vs{
+  display: inline-block;
+  text-align: center;
+}
+
+.brands-created{
+  background-color: #4664af;
+  border-radius:130px;
+  color:white;
+  height:250px;
+  width:250px;
+  font-size: 80px;
+  line-height: 250px;
+}
+
+
+.photo-shoots{
+  background-color: #dc8564;
+  border-radius:130px;
+  color:white;
+  height:250px;
+  width:250px;
+  font-size: 80px;
+  line-height: 250px;
+}
+
+
+.video-shoots{
+  background-color: #eeb461;
+  border-radius:130px;
+  color:white;
+  height:250px;
+  width:250px;
+  font-size: 80px;
+  line-height: 250px;
+}
+
+.label{
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* meet the team */
+
+.meet-the-team{
+  padding-left: 80px;
+  padding-top: 70px;
+  background-color: #e0dfe5;
+  padding-bottom: 70px;
+  margin-top: 70px;
+}
+
+.meet-the-team h1{
+  padding-bottom: 30px;
+}
+
+.kaitlyn{
+  display:inline-block;
+  background-image: url('../images/kaitlyn.jpg');
+  height:400px;
+  width:400px;
+  background-position: 40% 70%;
+  position: relative;
+}
+
+.cj{
+  display:inline-block;
+  background-image: url('../images/cj.jpg');
+  height:400px;
+  width:400px;
+  background-position: 20% 20%;
+  position: relative;
+}
+
+.kaitlyn-title{
+  background-color: #4664af;
+  padding: 30px;
+  position:absolute;
+  bottom:0;
+}
+
+.cj-title{
+  background-color: #4664af;
+  padding: 30px;
+  position:absolute;
+  bottom:0;
+}
+
+.cj-title h3{
+  color: white;
+  font-size: 25px;
+}
+
+.kaitlyn-title h3{
+  color: white;
+  font-size: 25px;
+}
+
+.light{
+  color: white !important;
+  font-size: 14px;
+}
+
+.team{
+  display: flex;
+  justify-content:space-around;
+}
+
+
+
+/* SERVICES */
+
+.hero-image-section-services{
+  padding-left: 80px;
+  color:white;
+  background: linear-gradient(#020202, transparent), url('../images/moneybird.jpg') no-repeat center;
+  background-size: cover;
+  background-position: 0% 40%;
+  height:620px;
+}
+
+.hero-image-section-services h1{
+  color:white;
+  position: relative;
+  z-index: 100;
+  top: 250px;
+  text-align: center;
+  font-size: 80px;
+  z-index: 1;
+}
+
+.bird-people-services{
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-top: 80px;
+  background-color: black;
+  color:white;
+  height:200px;
+  font-family: 'Roboto', sans-serif;
+  background-image: url('../images/outline2.png');
+  background-size: cover;
+}
+
+.bird-people-services p{
+  z-index: 99;
+}
+
+.bird-people-services h1{
+  padding-bottom: 20px;
+  color: #edb461;
+}
+
+/* services content block */
+
+.conference{
+  width:350px;
+  height:350px;
+  background-image: url('../images/conference.jpg');
+  background-size: cover;
+  display:inline-block;
+}
+
+.photoset{
+  width:350px;
+  height:350px;
+  background-image: url('../images/photoset.jpg');
+  background-size: cover;
+  display:inline-block;
+}
+
+.fistbump{
+  width:350px;
+  height:350px;
+  background-image: url('../images/fistbump.jpg');
+  background-size: cover;
+  display:inline-block;
+}
+
+.services-container{
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-top: 70px;
+  text-align: center;
+  background-color: #e0dfe5;
+
+}
+
+.description-services{
+   display:inline-block;
+  width:350px;
+  padding: 50px;
+  text-align: left;
+}
+
+.description-services img{
+padding-top: 20px;
+}
+
+.blue-h3{
+  font-size: 30px;
+  color: #4664af;
+  padding-bottom: 20px;
+}
+
+
+/* WORK */
+
+.hero-image-section-work{
+  padding-left: 80px;
+  color:white;
+  background: linear-gradient(#020202, transparent), url('../images/bower.jpg') no-repeat center;
+  background-size: cover;
+  background-position: 0% 40%;
+  height:620px;
+}
+
+.hero-image-section-work h1{
+  color:white;
+  position: relative;
+  z-index: 100;
+  top: 250px;
+  text-align: center;
+  font-size: 80px;
+  z-index: 1;
+}
+
+  /* Featured Projects */
+
+.keepwell-mockup{
+  background-image: url('../images/keepwell.jpg');
+  background-size: cover;
+  width:800px;
+  height:450px;
+  display: inline-block;
+}
+
+.keepwell-services{
+  padding-left: 80px;
+  padding-right: 80px;
+  display: flex;
+  justify-content:space-between;
+  margin-top: 50px;
+}
+
+.be-more-cool-mockup{
+  background-image: url('../images/bmc.jpg');
+  background-size: cover;
+  width:350px;
+  height:350px;
+  margin-bottom: 30px;
+}
+
+.sofia-mock{
+  background-image: url('../images/sofia.jpg');
+  background-size: cover;
+  width:350px;
+  height:350px;
+  margin-bottom: 30px;
+}
+
+.ella-payne{
+  background-image: url('../images/ep.jpg');
+  background-size: cover;
+  width:350px;
+  height:350px;
+  margin-bottom: 30px;
+}
+
+.keepwell-text{
+  display:inline-block;
+  width:300px;
+  padding-left: 60px;
+  padding-top: 80px;
+  padding-right: 60px;
+}
+
+.keepwell-text img{
+  float: right;
+}
+
+.keepwell-text p{
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.bmc-text{
+  width:300px;
+}
+
+.sofia-text{
+  width:300px;
+}
+
+.ep-text{
+  width:300px;
+}
+
+.be-more-cool-services{
+  display: inline-block;
+}
+
+.sofia-services{
+  display:inline-block;
+}
+
+.ella-payne-services{
+  display:inline-block;
+}
+
+.bottom-row{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.featured-projects{
+  padding-left: 80px;
+  padding-top: 70px;
+}
+
+  /* who weve worked with*/
+
+  .nike-apple{
+    background-color: #c1c1c1;
+    padding-top: 70px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 70px;
+    text-align: center;
+  }
+
+  .nike-apple h1{
+    padding-bottom: 30px;
+  }
+
+  /*LIGHTBOX MARKUP */
+
+  .lightbox {
+  	/* Default lightbox to hidden */
+  	display: none;
+
+  	/* Position and style */
+  	position: fixed;
+  	z-index: 999;
+  	width: 100%;
+  	height: 100%;
+  	text-align: center;
+  	top: 0;
+  	left: 0;
+  	background: rgba(0,0,0,0.8);
+  }
+
+  .lightbox img {
+  	/* Pad the lightbox image */
+  	max-width: 90%;
+  	max-height: 80%;
+  	margin-top: 20%;
+  }
+
+  .lightbox:target {
+  	/* Remove default browser outline */
+  	outline: none;
+
+  	/** Unhide lightbox **/
+  	display: block;
+  }
+
+  .icon {
+    animation: bounceIn 5s;
+  }
+
+
+  @keyframes bounceIn {
+    0% {
+      transform: scale(0.1);
+      opacity: 0;
+    }
+    60% {
+      transform: scale(1.2);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  .video{
+    padding:80px;
   }

@@ -7,7 +7,7 @@
     <meta charset="utf-8" />
 
 <!--favicon -->
-    <link rel="shortcut icon" href="images/..." type="img/ico" />
+    <link rel="shortcut icon" href="images/favicon.png" type="img/ico" />
 
 <!--css -->
     <link href="css/style.css" rel="stylesheet" type="text/css"/>
@@ -22,7 +22,7 @@
 
 <!--Nav bar -->
     <header>
-      <img class="headerlogo" src="images/logo.jpg" alt="logo" title="logo">
+      <img class="headerlogo" src="images/logo.png" alt="logo" title="logo">
       <nav>
         <ul>
           <li><a href="index.html">home</a></li>
@@ -38,9 +38,10 @@
 
       <!--HERO -->
       <section class="hero-image-section">
-        <h1>Welcome</h1>
-        <p>What are you waiting for? Look around and feast your eys on some killer creative.</p>
-        <button class=headerbutton type="button">Show me the work</button>
+
+        <h1 class="hero-img-text-top">Welcome</h1>
+        <p class="subhead-a">What are you waiting for? Look around and feast your eys on some killer creative.</p>
+         <button class=headerbutton onclick="window.location.href = 'work.html';">Show me the work</button>
       </section>
 
       <!--the kind of work-->
@@ -49,26 +50,30 @@
           <h1>the kind of work</h1>
           <div class="services">
 
-            <div class="service1">
-              <img class="icon" src="images/icon1.jpg" alt="icon1" title="icon1">
+            <article class="service">
+              <img class="icon" src="images/icon1.png" alt="icon1" title="icon1">
               <h2>branding</h2>
-              <p>From the name to the logo to the overall tone we will create and enhance the best face for your brand.</p>
-              <img class="whitearrow" src="images/cleararrow.jpg" alt="whitaarrow" title="whitearrow">
-            </div>
+              <p>From the name to the logo we will create and enhance the best face for your brand.</p>
+              <!--<img class="whitearrow" src="images/cleararrow.png" alt="whitaarrow" title="whitearrow"> -->
+              <a class="whitearrow" href="services.html"><img src="images/cleararrow.png" alt="whitaarrow">
+              </a>
+            </article>
 
-            <div class="service2">
-              <img class="icon" src="images/icon2.jpg" alt="icon2" title="icon2">
+            <article class="service">
+              <img class="icon" src="images/icon2.png" alt="icon2" title="icon2">
               <h2>digital marketing</h2>
               <p>staying on top of trends via SEO and social media are our specialty.</p>
-              <img class="whitearrow" src="images/cleararrow.jpg" alt="whitaarrow" title="whitearrow">
-            </div>
+              <a class="whitearrow" href="services.html"><img src="images/cleararrow.png" alt="whitaarrow">
+              </a>
+            </article>
 
-            <div class="service3">
-              <img class="icon" src="images/icon3.jpg" alt="icon3" title="icon3">
+            <article class="service">
+              <img class="icon" src="images/icon3.png" alt="icon3" title="icon3">
               <h2>content creation</h2>
               <p>We create killer content wheather it be photography video or animation.</p>
-              <img class="whitearrow" src="images/cleararrow.jpg" alt="whitaarrow" title="whitearrow">
-            </div>
+              <a class="whitearrow" href="services.html"><img src="images/cleararrow.png" alt="whitaarrow">
+              </a>
+            </article>
           </div>
         </section>
       </div>
@@ -84,7 +89,8 @@
             <div class="solid">
               <h2>keepwell</h2>
               <p>Re-designing Keepwell's website was very enjoyable. Keepwell is a privately-owned nutritional food and beverage manufacturing company with a great product. I was able to use a bright fun color palette with assets to match accentuating the brands core values.</p>
-              <img class="orangearrow" src="images/orangearrow.jpg" alt="orangearrow" title="orangearrow">
+              <a class="orangearrow" href="work.html"><img src="images/orangearrow.png" alt="orangearrow">
+              </a>
             </div>
 
           </div>
@@ -94,10 +100,11 @@
             <div class="solid">
               <h2>Sofia</h2>
               <p>I enjoyed creating a unique visual identity to match the immense talent of Sofia, a makeup artist operating out of South Florida. A complete brand guide including a brand mark, color palette, typeface pairing, graphical assets and voice & tone were created.</p>
-              <img class="orangearrow" src="images/orangearrow.jpg" alt="orangearrow" title="orangearrow">
+              <a class="orangearrow" href="work.html"><img src="images/orangearrow.png" alt="orangearrow">
+              </a>
             </div>
 
-            <div class="mockup">
+            <div class="mockup2">
             </div>
           </div>
 
@@ -110,12 +117,11 @@
        <section class="bird-people">
          <h1>the story behind the bird</h1>
          <p1> A Bower Bird is a bird species native to Australia that is known for creating beautiful bowers(nests to attract a mate) by collecting primarily blue objects. We share the same goal as the bower bird, using our killer creative we hope to sway people into likeing our brands and buying the products we promote.</p1>
-         <img class="outline" src="images/outline.jpg" alt="outline" title="online">
        </section>
 
 
        <!--form-->
-       <section>
+       <section class="form-copy">
          <h1>
            let's start a coversation
          </h1>
@@ -131,7 +137,7 @@
 
        <form class="form" id="test_form" name="test_form" method="" action="form.php" onsubmit="return validateForm(this)">
 
-         <div class="name">
+         <div class="text-field">
            <label for="name" class="label_input_wrap">
            </label>
            <input class="input2" type="text" name="name" id="name" placeholder="name"/>
@@ -155,9 +161,9 @@
            <input class="input2" type="text" name="company" id="company" placeholder="Company" />
          </div>
 
-         <div class="description">
+         <div class="comments">
            <label for="comments" class="albel_input_wrap"</ label>
-           <textarea name:="comments" id="comments" placeholder="brief description"></textarea>
+           <textarea class="input2" name:="comments" id="comments" placeholder="brief description"></textarea>
          </div>
 
          <div class="submit">
@@ -168,13 +174,18 @@
 
        <!--footer-->
        <footer>
-         <img class="footerlogo" src="images/logo.jpg" alt="logo" title="logo">
-         <p>home<br> services<br> work<br> about</p>
+         <img class="footerlogo" src="images/logo.png" alt="logo" title="logo">
+         <ul class="footer-nav">
+           <li><a href="index.html">home</a></li>
+           <li><a href="about.html">about</a></li>
+           <li><a href="services.html">services</a></li>
+           <li><a href="work.html">work</a></li>
+         </ul>
          <div class="socialmedia">
-           <a href="https://www.instagram.com/" target="_blank" ><img src="images/insta.jpg" alt="insta" title="insta"/></a>
-           <a href="https://www.twitter.com/explore" target="_blank"><img src="images/twitter.jpg" alt="insta" title="insta"/></a>
-           <a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin.jpg" alt="insta" title="insta"/></a>
-           <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.jpg" alt="insta" title="insta"/></a>
+           <a href="https://www.instagram.com/" target="_blank" ><img src="images/insta.png" alt="insta" title="insta"/></a>
+           <a href="https://www.twitter.com/explore" target="_blank"><img src="images/twitter.png" alt="insta" title="insta"/></a>
+           <a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin.png" alt="insta" title="insta"/></a>
+           <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.png" alt="insta" title="insta"/></a>
          </div>
 
        </footer>
